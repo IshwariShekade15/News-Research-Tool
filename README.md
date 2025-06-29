@@ -25,7 +25,7 @@ Just paste up to 3 URLs, ask anything—and get smart, source-backed answers in 
 
 ---
 
-##  Why Not Just Use ChatGPT?**
+##  Why Not Just Use ChatGPT?
 
 Sure, you could copy-paste articles into ChatGPT...
 But here’s why **RAG (Retrieval-Augmented Generation)** makes all the difference:
@@ -39,7 +39,7 @@ But here’s why **RAG (Retrieval-Augmented Generation)** makes all the differen
 
 ---
 
-##  Built With**
+##  Built With
 
 * **Streamlit** – Interactive Python UI
 * **LangChain** – Brains behind the scenes
@@ -49,7 +49,7 @@ But here’s why **RAG (Retrieval-Augmented Generation)** makes all the differen
 
 ---
 
-##  How It Works**
+##  **How It Works**
 
 1.  Paste URLs (up to 3)
 2.  Hit “Process URLs”
@@ -59,7 +59,7 @@ But here’s why **RAG (Retrieval-Augmented Generation)** makes all the differen
 
 ---
 
-##  Tech Stack**
+##  Tech Stack
 
 * **Embeddings:** `all-MiniLM-L6-v2`
 * **Vector DB:** Qdrant
