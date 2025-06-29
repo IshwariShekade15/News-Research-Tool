@@ -58,7 +58,11 @@ collection_name = "demo1"
 #if client.collection_exists(collection_name):
 #    client.delete_collection(collection_name)
 
-llm = ChatGroq(model="llama-3.3-70b-versatile", temperature=0.5)
+llm = ChatGroq(
+    model="llama-3-70b-8192",  # or the one you're actually using
+    temperature=0.5,
+    api_key=st.secrets.get("GROQ_API_KEY")
+)
 
 st.title("News Research Tool 📰")
 
@@ -190,7 +194,7 @@ if process_btn:
                 progress_bar.progress(40)
                 
                 text_splitter = RecursiveCharacterTextSplitter(
-                    separators=["\n\n", "\n" , "." , " " , ","],
+                    separators=["\n\n", "\n", ". ", " "],
                     chunk_size=150, 
                     chunk_overlap=50  
                 )
