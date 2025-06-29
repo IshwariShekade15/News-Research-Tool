@@ -11,7 +11,7 @@ Just paste up to 3 URLs, ask anything—and get smart, source-backed answers in 
 
 This is my very first RAG (Retrieval-Augmented Generation) project built with Streamlit—and I had a blast making it!
 
-##  Ready to Explore?**
+##  Ready to Explore?
 
 👉 [**Launch the App**](https://news-research-tool-app.streamlit.app/)
 
@@ -41,18 +41,17 @@ But here’s why **RAG (Retrieval-Augmented Generation)** makes all the differen
 
 ---
 
-##  Built With
+ **Tech Stack**
 
-* **Streamlit** – Interactive Python UI
-* **LangChain** – Brains behind the scenes
-* **Qdrant** – Fast, scalable vector DB
-* **HuggingFace** – Smart sentence embeddings
-* **Groq (Llama-3.3-70b-versatile)** – Blazing-fast LLM
-
----
-
+* **Streamlit** – Interactive Python UI  
+* **LangChain** – Brains behind the scenes  
+* **Qdrant** – Fast, scalable vector DB  
+* **HuggingFace** – Smart sentence embeddings  
+* **Groq (Llama-3.3-70b-versatile)** – Blazing-fast LLM  
+* **Embeddings:** `all-MiniLM-L6-v2`  
+* **Dependencies:** See `requirements.txt`
 ##  **How It Works**
-
+---
 1.  Paste URLs (up to 3)
 2.  Hit “Process URLs”
 3.  Ask questions
@@ -60,17 +59,6 @@ But here’s why **RAG (Retrieval-Augmented Generation)** makes all the differen
 5.  Clear and restart anytime
 
 ---
-
-##  Tech Stack
-
-* **Embeddings:** `all-MiniLM-L6-v2`
-* **Vector DB:** Qdrant
-* **LLM:** Llama 3 via Groq
-* **Frontend:** Streamlit
-* **Dependencies:** See `requirements.txt`
-
----
-
 
 **Happy researching!** 
 
