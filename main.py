@@ -59,7 +59,7 @@ collection_name = "demo1"
 #    client.delete_collection(collection_name)
 
 llm = ChatGroq(
-    model="llama-3-70b-8192",  # or the one you're actually using
+    model="llama-3.3-70b-versatile", 
     temperature=0.5,
     api_key=st.secrets.get("GROQ_API_KEY")
 )
