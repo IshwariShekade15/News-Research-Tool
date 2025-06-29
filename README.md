@@ -7,7 +7,9 @@
 **Your personal AI news analyst.**
 Just paste up to 3 URLs, ask anything—and get smart, source-backed answers in seconds.
 
-**No coding. No clutter. Just answers.**
+✨ No coding. No clutter. Just answers.
+
+This is my very first RAG (Retrieval-Augmented Generation) project built with Streamlit—and I had a blast making it!
 
 ##  Ready to Explore?**
 
