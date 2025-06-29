@@ -36,18 +36,20 @@ def load_embeddings():
         model_kwargs={'device': 'cpu'}
     )
 
-# Initialize Qdrant client
 @st.cache_resource
 def init_qdrant_client():
-    # Option 1: Use cloud Qdrant (if you have API key)
-    if os.getenv("QDRANT_API_KEY"):
+    api_key = st.secrets.get("QDRANT_API_KEY") or os.getenv("QDRANT_API_KEY")
+    url = st.secrets.get("QDRANT_URL") or os.getenv("QDRANT_URL")
+    timeout = 300
+
+    if api_key and url:
         return QdrantClient(
-            api_key=os.getenv("QDRANT_API_KEY"),
-            url=os.getenv("QDRANT_URL"),
-            timeout=240
+            api_key=api_key,
+            url=url,
+            timeout=timeout
         )
-    else :
-        return QdrantClient(":memory:")
+    else:
+        return QdrantClient(":memory:", timeout=timeout)
     
 #collection name for qdrant 
 collection_name = "demo1"
@@ -188,7 +190,7 @@ if process_btn:
                 progress_bar.progress(40)
                 
                 text_splitter = RecursiveCharacterTextSplitter(
-                    separators=["\n\n", "\n", ". ", " "],
+                    separators=["\n\n", "\n" , "." , " " , ","],
                     chunk_size=150, 
                     chunk_overlap=50  
                 )
